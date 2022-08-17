@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles-mobile.css">
+    </head>
+    <body class="noselect" id="wrapper">
+        <div class="bg" id="background">
+            <div class="box1">
+                <div class="to-do">T O D O</div>
+                <div class="switch-mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" id="switch-mode-icon"></svg>
+                </div>  
+            </div>
+            <div class="box2">
+                <div class="input-container" id="inputContainer">
+                    <span class="check" id="firstCheck" style="margin-top: 10px;"></span>
+                    <input type="search" class="input-dark" placeholder="Create a new todo..." id="addToDo"/>
+                    <span class="clear" id="firstClear" style="margin-top: 13px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/>
+                        </svg>
+                    </span>
+                </div>
+                <ul class="to-do-list" id="toDoList">
+                    <div>
+                        <ul class="tab-list" id="tabList">
+                            <li id="toDoNum">0 items left</li>
+                            <li></li>
+                            <li class="button-class" onclick="clearCompleted()" id="clearCompleted">Clear Completed</li>
+                        </ul>
+                    </div>
+                </ul>
+                <div class="to-do-list" id="lastTabList" style="padding-bottom: 1px;">
+                    <ul class="tab-list" style="grid-template-columns: 70px 100px 150px; margin-top: 10px;">
+                        <li class="button-class" onclick="showAll()" id="all" style="text-align: right;">All</li>
+                        <li class="button-class" onclick="showActive()" id="active" style="text-align: center;">Active</li>
+                        <li class="button-class" onclick="showCompleted()" id="completed" style="text-align: left;">Completed</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </body>
+    <script src="./script-mobile.js"></script>
+</html>
