@@ -1,0 +1,195 @@
+:root {
+    --Bright-Blue: hsl(220, 98%, 61%);
+    --Check-Background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    /* Light Theme Colors*/
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+    --Light-Grayish-Blue-lt: hsl(233, 11%, 84%);
+    --Dark-Grayish-Blue-lt: hsl(236, 9%, 61%);
+    --Very-Dark-Grayish-Blue-lt: hsl(235, 19%, 35%);
+    /* Dark Theme Colors*/
+    --Very-Dark-Blue: hsl(235, 21%, 11%);
+    --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+    --Light-Grayish-Blue: hsl(234, 39%, 85%);
+    --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+    --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+    --Very-Dark-Grayish-Blue-dt: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+    --Dark-Theme-URL: url('../res/bg-mobile-dark.jpg');
+    --Light-Theme-URL: url('../res/bg-mobile-light.jpg')
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+}
+
+.bg {
+    background-image: var(--Dark-Theme-URL);
+    width: 375px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.to-do {
+    text-align: left;
+    padding-left: 20px;
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: 'Josefin Sans';
+    color: white;
+}
+
+.switch-mode {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.box1 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-gap: 75px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box2 {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.input-container {
+    display: grid;
+    width: 335px;
+    grid-template-columns: 60px 235px 40px;
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    border-radius: 5px;
+}
+
+input[type=search] {  
+    height: 46.4px;
+    border: none;
+    color: var(--Light-Grayish-Blue);
+    font-size: 14px;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    background-color: inherit;
+    border-radius: inherit;
+}
+
+.input-light::placeholder {
+    color: var(--Dark-Grayish-Blue-lt);
+}
+
+.input-dark::placeholder {
+    color: var(--Very-Dark-Grayish-Blue-dt);
+}
+
+.to-do-list {
+    padding: initial;
+    padding-bottom: 15px;
+    list-style-type: none;
+    margin-top: 15px;
+    width: 335px;
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    border-radius: 5px;
+    box-shadow: 0px 10px 30.0px 4.0px hsl(0deg 0% 0% / 0.36);
+}
+
+.item {
+    display: grid;
+    color: var(--Light-Grayish-Blue);
+    font-size: 18px;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    border-bottom: 1px solid var(--Very-Dark-Grayish-Blue-dt);
+    grid-template-columns: 60px 235px 40px;
+}
+
+:focus {
+    outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+}
+
+.check {
+    background-color: transparent;
+    position: relative;
+    margin-top: 14px;
+    margin-left: 20px;
+    height: 19px;
+    width: 19px;
+    border: 2px solid var(--Very-Dark-Grayish-Blue-dt);
+    border-radius: 50%;
+}
+
+.check > svg {
+    position: absolute;
+    left: 29%;
+    top: 30%;
+}
+
+.clear {
+    display: none;
+    margin-top: 17px;
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.item:hover > .clear {
+    display: block;
+}
+
+.tab-list {
+    padding: initial;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 100px 70px 130px;
+    color: var(--Very-Dark-Grayish-Blue-dt);
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.button-class:hover {
+    color: var(--Light-Grayish-Blue-hover) !important;
+    cursor: default;
+}
+
+.button-class-light:hover {
+    color: var(--Very-Dark-Grayish-Blue-lt) !important;
+    cursor: default;
+}
+
+.to-do-checked {
+    color: var(--Very-Dark-Grayish-Blue-dt);
+    text-decoration-line: line-through;
+    text-decoration-color: var(--Dark-Grayish-Blue);
+    text-decoration-thickness: 1px;
+}
+
+.to-do-not-checked {
+    color: var(--Light-Grayish-Blue);
+    text-decoration: none;
+}
+
+.switch-mode > svg:hover > path {
+    fill: rgb(231, 229, 229);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;                         
+}
