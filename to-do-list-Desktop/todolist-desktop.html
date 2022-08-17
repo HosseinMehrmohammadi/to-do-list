@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles-desktop.css">
+    </head>
+    <body class="noselect" id="wrapper">
+        <div class="bg" id="background">
+            <div class="box1">
+                <div class="to-do">T O D O</div>
+                <div class="switch-mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" id="switch-mode-icon"></svg>
+                </div>  
+            </div>
+            <div class="box2">
+                <div class="input-container" id="inputContainer">
+                    <span class="check" id="firstCheck"></span>
+                    <input type="search" class="input-dark" placeholder="Create a new todo..." id="addToDo"/>
+                    <span class="clear" id="firstClear">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                            <path fill="#494C6B" fill-rule="evenodd" d="M16.97 0l.708.707L9.546 8.84l8.132 8.132-.707.707-8.132-8.132-8.132 8.132L0 16.97l8.132-8.132L0 .707.707 0 8.84 8.132 16.971 0z"/>
+                        </svg>
+                    </span>
+                </div>
+                <ul class="to-do-list" id="toDoList">
+                    <div>
+                        <ul class="tab-list" id="tabList">
+                            <li id="toDoNum">0 items left</li>
+                            <li class="button-class" onclick="showAll()" id="all">All</li>
+                            <li class="button-class" onclick="showActive()" id="active">Active</li>
+                            <li class="button-class" onclick="showCompleted()" id="completed">Completed</li>
+                            <li class="button-class" onclick="clearCompleted()" id="clearCompleted">Clear Completed</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div> 
+        </div>
+    </body>
+    <script src="./script-desktop.js"></script>
+</html>
