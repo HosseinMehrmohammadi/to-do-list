@@ -5,7 +5,7 @@ import { changeProp, changeProps } from "http://127.0.0.1:8080/src/methods/chang
 import { getMode, store, storeLastList, getLastList, storeMode } from "http://127.0.0.1:8080/src/methods/localStorageMethods.js";
 import { crossIcon, moonIcon, sunIcon, checkIcon } from "http://127.0.0.1:8080/res/svg.js";
 import { BRIGHT_BLUE, LIGHT_GRAYISH_BLUE_LT, VERY_DARK_GRAYISH_BLUE_DT, VERY_DARK_GRAYISH_BLUE_LT, VERY_LIGHT_GRAY, WHITE, LIGHT_GRAYISH_BLUE, VERY_DARK_BLUE, VERY_DARK_DESATURATED_BLUE, DARK_GRAYISH_BLUE, DARK_GRAYISH_BLUE_LT } from "http://127.0.0.1:8080/res/color.js";
-import { BOX_SHADOW_LT, TABLIST_BOX_SHADOW_LT, ITEM_BORDER_BOTTOM_LT, BOX_SHADOW_DT, ITEM_BORDER_BOTTOM_DT, CHECK_BACKGROUND, CHECK_BORDER_LT, CHECK_BORDER_DT } from "http://127.0.0.1:8080/res/style.js";
+import { BOX_SHADOW_LT_MOBILE, TABLIST_BOX_SHADOW_LT, ITEM_BORDER_BOTTOM_LT, BOX_SHADOW_DT, ITEM_BORDER_BOTTOM_DT, CHECK_BACKGROUND, CHECK_BORDER_LT, CHECK_BORDER_DT } from "http://127.0.0.1:8080/res/style.js";
 import { LT_URL, DT_URL } from "http://127.0.0.1:8080/res/url.js";
 var toDos = new ToDoList();
 var currentList = toDos.items;
@@ -250,7 +250,7 @@ var loadMode = function () {
         (0, changeProp)(bg, "background-image", LT_URL);
         (0, changeProp)(inputContainer, "background-color", WHITE);
         (0, changeProp)(ul, "background-color", WHITE);
-        (0, changeProp)(ul, "box-shadow", BOX_SHADOW_LT);
+        (0, changeProp)(ul, "box-shadow", BOX_SHADOW_LT_MOBILE);
         (0, changeProp)(lastTabList, "background-color", WHITE);
         (0, changeProp)(lastTabList, "box-shadow", TABLIST_BOX_SHADOW_LT);
         (0, changeProps)(checkList, "border-color", LIGHT_GRAYISH_BLUE_LT);

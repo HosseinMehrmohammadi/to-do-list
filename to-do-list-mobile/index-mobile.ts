@@ -287,7 +287,7 @@ let loadMode = () => {
         changeProp(bg, "background-image", url.LT_URL);
         changeProp(inputContainer, "background-color", color.WHITE);
         changeProp(ul, "background-color", color.WHITE);
-        changeProp(ul, "box-shadow", customStyle.BOX_SHADOW_LT);
+        changeProp(ul, "box-shadow", customStyle.BOX_SHADOW_LT_MOBILE);
         changeProp(lastTabList, "background-color", color.WHITE);
         changeProp(lastTabList, "box-shadow", customStyle.TABLIST_BOX_SHADOW_LT);
 
