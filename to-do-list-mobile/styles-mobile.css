@@ -16,8 +16,8 @@
     --Very-Dark-Grayish-Blue-dt: hsl(233, 14%, 35%);
     --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
 
-    --Dark-Theme-URL: url('../res/bg-mobile-dark.jpg');
-    --Light-Theme-URL: url('../res/bg-mobile-light.jpg')
+    --Dark-Theme-URL: url('../res/images/bg-mobile-dark.jpg');
+    --Light-Theme-URL: url('../res/images/bg-mobile-light.jpg')
 }
 
 body {
